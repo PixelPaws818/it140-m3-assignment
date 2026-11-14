@@ -10,18 +10,20 @@
 
 START paycheck_calculator
 
-    TODO: Obtain the required program input.
+    DISPLAY "Enter the amount of hours worked this week: "
+    INPUT hours_worked
 
-    IF TODO: Specify the condition for the applicable pay rule.
-        TODO: List the processing steps for the true decision path.
+    IF hours_worked > 40 Then
+        extra_hours = hours_worked - 40
+      	gross_pay = 800 + (extra_hours * 30)
     ELSE
-        TODO: List the processing steps for the false decision path.
+        gross_pay= (hours_worked * 20)
     ENDIF
 
-    TODO: Output the calculated weekly paycheck.
+    DISPLAY "Weekly paycheck: $", gross_pay
 
 END paycheck_calculator
 
 
 # === References ===
-# TODO: List outside sources or assistance you actually used, or delete this line.
+
