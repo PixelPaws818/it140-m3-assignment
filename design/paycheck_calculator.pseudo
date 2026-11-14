@@ -17,7 +17,7 @@ START paycheck_calculator
         extra_hours = hours_worked - 40
       	gross_pay = 800 + (extra_hours * 30)
     ELSE
-        gross_pay= (hours_worked * 20)
+        gross_pay = (hours_worked * 20)
     ENDIF
 
     DISPLAY "Weekly paycheck: $", gross_pay
